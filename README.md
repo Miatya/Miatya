@@ -14,11 +14,10 @@ My name's Miat, I am a idiot who plays Roblox, GTA 5, Forza Horizon 5 & More. I 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white&style=for-the-badge)
 
 ## Work Places:
-- Raptor's Development Supply | 2.5k+ Discord Members, 1.2k+ Roblox Group Members. (Executive): https://discord.gg/X8zKHy7TG4
-- Redon Tech | 1.1k+ Discord Members, 240+ Roblox Group Members. (Administrator): https://discord.gg/Eb384Xw
+- Redon Tech | 1.2k+ Discord Members, 240+ Roblox Group Members. (Administrator): https://discord.gg/Eb384Xw
 - Fire Simulations | 430+ Discord Members, 1.6k+ Roblox Group Members. (Development Manager?): https://discord.gg/kSecRAf55G
-- RRC | Revisioned Roleplay Community | N/A Discord Members, 800+ Roblox Group Members.  (Undefined Currently): N/A
-
+- Rivervale Studios | Discord Not Public | Roblox Group Not Public. (Co-Founder): N/A
+- Skittles Studio | 1k+ Discord Members | 200+ Roblox Group Members. (Head Developer): https://discord.gg/skittle
 ## Contact Places:
 
 If you need to contact me for any reason you can down below:
