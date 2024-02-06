@@ -17,7 +17,6 @@ My name's Miat, I am a idiot who plays Roblox, GTA 5, Forza Horizon 5 & More. I 
 - Redon Tech | 1.2k+ Discord Members, 240+ Roblox Group Members. (Administrator): https://discord.gg/Eb384Xw
 - Fire Simulations | 430+ Discord Members, 1.6k+ Roblox Group Members. (Development Manager?): https://discord.gg/kSecRAf55G
 - Rivervale Studios | Discord Not Public | Roblox Group Not Public. (Co-Founder): N/A
-- Skittles Studio | 1k+ Discord Members | 200+ Roblox Group Members. (Head Developer): https://discord.gg/skittle
 ## Contact Places:
 
 If you need to contact me for any reason you can down below:
