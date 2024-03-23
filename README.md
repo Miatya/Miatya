@@ -14,7 +14,6 @@ My name's Miat, I am a idiot who plays Roblox, GTA 5, Forza Horizon 5 & More. I 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white&style=for-the-badge)
 
 ## Work Places:
-- Trial Developer – Game Product Industries (17.3k+ Discord Members)
 - Administrator – Eonware (770+ Discord Members)
 - Administrator – Redon Tech (1.3k+ Discord Members)
 - Company Contractor – Respolight Development (3.6k+ Discord Members)
