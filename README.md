@@ -14,12 +14,14 @@ My name's Miat, I am a idiot who plays Roblox, GTA 5, Forza Horizon 5 & More. I 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white&style=for-the-badge)
 
 ## Work Places:
-- Administrator – Eonware (770+ Discord Members)
-- Administrator – Redon Tech (1.3k+ Discord Members)
-- Company Contractor – Respolight Development (3.6k+ Discord Members)
-- Head Developer - Emergency Vehicle Outfitting Company (1.6k+ Discord Members)
-- Development Lead – Fire Simulations (660+ Discord Members)
+- Founder – Miata’s Upfitting Company (200+ Discord Members)
+- Administrator – Eonware (890+ Discord Members)
+- Administrator – Redon Tech (1.49k+ Discord Members)
+- Developer - Skittle Studios (1.2k+ Discord Members)
+- Development Lead – Fire Simulations (1.4k+ Discord Members)
+- Developer – Emergency Vehicle Outfitting Company (1.9k+ Discord Members)
 - Moderator – Redon Studios (80+ Discord Members)
+- Co-Owner - Blueprint Studips (200+ Discord Members)
 
 If you would like an invite to any other these places feel free to contact me on Discord.
 ## Contact Places:
