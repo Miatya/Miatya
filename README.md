@@ -1,6 +1,6 @@
 <div align="center">
   
-# 👋 Ciao! I'm Miat
+# 👋 Well Hello There! I'm Miata
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Systems+Architect+%7C+Developer;Community+Relations+Manager;Technical+Leadership;Always+Learning+%F0%9F%9A%80)](https://git.io/typing-svg)
 
