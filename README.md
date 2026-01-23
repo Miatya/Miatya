@@ -90,7 +90,7 @@ const Miat = {
 
 <div align="center">
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=10)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=13)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark)
 
 </div>
