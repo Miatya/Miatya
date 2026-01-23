@@ -87,13 +87,13 @@ const Miat = {
 <div align="center">
   
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0E27&title_color=00D9FF&icon_color=60A5FA&text_color=93C5FD"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=dark&hide_border=true&bg_color=0A0E27&title_color=00D9FF&text_color=93C5FD"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=dark&hide_border=true&bg_color=0A0E27&title_color=00D9FF&text_color=93C5FD&include_all_commits=true&count_private=true"/>
 
 </div>
 
 <div align="center">
   
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=miatya&theme=dark&hide_border=true&background=0A0E27&ring=00D9FF&fire=60A5FA&currStreakLabel=00D9FF&stroke=3B82F6&sideLabels=93C5FD&dates=93C5FD)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=miatya&theme=dark&hide_border=true&background=0A0E27&ring=00D9FF&fire=60A5FA&currStreakLabel=00D9FF&stroke=3B82F6&sideLabels=93C5FD&dates=93C5FD)](https://git.io/streak-stats)
 
 </div>
 
@@ -109,7 +109,7 @@ const Miat = {
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=miatya&theme=onestar&no-frame=true&no-bg=false&margin-w=4&column=7&title_color=00D9FF&text_color=93C5FD&icon_color=60A5FA&bg_color=0A0E27)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=miatya&theme=algolia&no-frame=false&no-bg=false&margin-w=4&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -133,7 +133,7 @@ const Miat = {
 
 <div align="center">
 
-![](https://github-contributor-stats.vercel.app/api?username=miatya&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+<img src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0E27&title_color=00D9FF&icon_color=60A5FA&text_color=93C5FD&hide_rank=true" />
 
 </div>
 
@@ -142,6 +142,8 @@ const Miat = {
 ## 💻 Coding Activity
 
 <div align="center">
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=miatya&theme=tokyonight)
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
