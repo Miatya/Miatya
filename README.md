@@ -86,30 +86,20 @@ const Miat = {
 
 <div align="center">
   
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0E27&title_color=00D9FF&icon_color=60A5FA&text_color=93C5FD"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=dark&hide_border=true&bg_color=0A0E27&title_color=00D9FF&text_color=93C5FD&include_all_commits=true&count_private=true"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0E27&title_color=00D9FF&icon_color=60A5FA&text_color=93C5FD"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=dark&hide_border=true&bg_color=0A0E27&title_color=00D9FF&text_color=93C5FD&include_all_commits=true&count_private=true"/>
 
 </div>
 
 <div align="center">
   
-[![GitHub Streak](https://streak-stats.demolab.com?user=miatya&theme=dark&hide_border=true&background=0A0E27&ring=00D9FF&fire=60A5FA&currStreakLabel=00D9FF&stroke=3B82F6&sideLabels=93C5FD&dates=93C5FD)](https://git.io/streak-stats)
+<img src="https://streak-stats.demolab.com?user=miatya&theme=dark&hide_border=true&background=0A0E27&ring=00D9FF&fire=60A5FA&currStreakLabel=00D9FF&stroke=3B82F6&sideLabels=93C5FD&dates=93C5FD" alt="GitHub Streak" />
 
 </div>
 
 <div align="center">
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&custom_title=Miat's%20Contribution%20Graph&bg_color=0A0E27&color=00D9FF&line=60A5FA&point=93C5FD&area_color=3B82F6&title_color=00D9FF&area=true&hide_border=true)
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=miatya&theme=algolia&no-frame=false&no-bg=false&margin-w=4&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
