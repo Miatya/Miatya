@@ -83,8 +83,8 @@ const Miat = {
 
 <div align="center">
   
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=false&border_radius=10&border_color=30363D"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&hide_border=false&border_radius=10&border_color=30363D"/>
 
 </div>
 
@@ -130,7 +130,7 @@ const Miat = {
 
 [![Discord](https://img.shields.io/badge/Discord-miatavxbe-3B82F6?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
 [![GitHub](https://img.shields.io/badge/GitHub-miatya-1E40AF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/miatya)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-60A5FA?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-60A5FA?style=for-the-badge&logo=gmail&logoColor=white)]()
 
 *Feel free to reach out for collaborations or just a chat!*
 
