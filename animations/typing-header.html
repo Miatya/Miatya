@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Typing Header</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0D1117;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Fira Code', 'Courier New', monospace;
+        }
+
+        .typing-container {
+            text-align: center;
+        }
+
+        .typing-text {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #00D9FF;
+            min-height: 60px;
+            display: inline-block;
+            border-right: 3px solid #00D9FF;
+            padding-right: 10px;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { border-color: #00D9FF; }
+            50% { border-color: transparent; }
+        }
+
+        .controls {
+            margin-top: 30px;
+            background: #161B22;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #30363D;
+        }
+
+        .control-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        label {
+            color: #C9D1D9;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        input[type="text"], input[type="number"], input[type="color"] {
+            width: 100%;
+            padding: 8px;
+            background: #0D1117;
+            border: 1px solid #30363D;
+            border-radius: 5px;
+            color: #C9D1D9;
+            font-family: inherit;
+        }
+
+        button {
+            background: #00D9FF;
+            color: #0D1117;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #00B8E6;
+            transform: translateY(-2px);
+        }
+
+        .phrase-list {
+            background: #0D1117;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #30363D;
+            max-height: 150px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .phrase-item {
+            color: #C9D1D9;
+            padding: 5px;
+            margin: 3px 0;
+            background: #161B22;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .remove-btn {
+            background: #DA3633;
+            padding: 3px 8px;
+            font-size: 0.8rem;
+        }
+
+        h3 {
+            color: #00D9FF;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="typing-container">
+        <div class="typing-text" id="typingText"></div>
+        
+        <div class="controls">
+            <h3>⚙️ Customize Your Typing Animation</h3>
+            
+            <div class="control-group">
+                <label>Text Color:</label>
+                <input type="color" id="colorPicker" value="#00D9FF">
+            </div>
+            
+            <div class="control-group">
+                <label>Font Size (rem):</label>
+                <input type="number" id="fontSize" value="2.5" min="1" max="5" step="0.1">
+            </div>
+            
+            <div class="control-group">
+                <label>Typing Speed (ms):</label>
+                <input type="number" id="typeSpeed" value="100" min="50" max="300" step="10">
+            </div>
+            
+            <div class="control-group">
+                <label>Pause Between Phrases (ms):</label>
+                <input type="number" id="pauseTime" value="2000" min="500" max="5000" step="100">
+            </div>
+            
+            <div class="control-group">
+                <label>Add New Phrase:</label>
+                <input type="text" id="newPhrase" placeholder="Enter a new phrase...">
+                <button onclick="addPhrase()">Add Phrase</button>
+            </div>
+            
+            <div class="control-group">
+                <label>Current Phrases:</label>
+                <div class="phrase-list" id="phraseList"></div>
+            </div>
+            
+            <button onclick="applyChanges()">Apply Changes</button>
+            <button onclick="resetDefaults()">Reset to Defaults</button>
+        </div>
+    </div>
+
+    <script>
+        let phrases = [
+            "Game Developer | Scripter",
+            "Discord Bot Creator",
+            "Roblox Enthusiast", 
+            "Always Learning 🚀"
+        ];
+        
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+        let pauseTime = 2000;
+        
+        function type() {
+            const typingText = document.getElementById('typingText');
+            const currentPhrase = phrases[currentPhraseIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+            } else {
+                typingText.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+            }
+            
+            let speed = typeSpeed;
+            
+            if (isDeleting) {
+                speed = typeSpeed / 2;
+            }
+            
+            if (!isDeleting && currentCharIndex === currentPhrase.length) {
+                speed = pauseTime;
+                isDeleting = true;
+            } else if (isDeleting && currentCharIndex === 0) {
+                isDeleting = false;
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                speed = 500;
+            }
+            
+            setTimeout(type, speed);
+        }
+        
+        function addPhrase() {
+            const input = document.getElementById('newPhrase');
+            const newPhrase = input.value.trim();
+            
+            if (newPhrase) {
+                phrases.push(newPhrase);
+                input.value = '';
+                updatePhraseList();
+            }
+        }
+        
+        function removePhrase(index) {
+            if (phrases.length > 1) {
+                phrases.splice(index, 1);
+                updatePhraseList();
+            } else {
+                alert('You must have at least one phrase!');
+            }
+        }
+        
+        function updatePhraseList() {
+            const phraseList = document.getElementById('phraseList');
+            phraseList.innerHTML = '';
+            
+            phrases.forEach((phrase, index) => {
+                const div = document.createElement('div');
+                div.className = 'phrase-item';
+                div.innerHTML = `
+                    <span>${phrase}</span>
+                    <button class="remove-btn" onclick="removePhrase(${index})">Remove</button>
+                `;
+                phraseList.appendChild(div);
+            });
+        }
+        
+        function applyChanges() {
+            const color = document.getElementById('colorPicker').value;
+            const size = document.getElementById('fontSize').value;
+            typeSpeed = parseInt(document.getElementById('typeSpeed').value);
+            pauseTime = parseInt(document.getElementById('pauseTime').value);
+            
+            const typingText = document.getElementById('typingText');
+            typingText.style.color = color;
+            typingText.style.borderRightColor = color;
+            typingText.style.fontSize = size + 'rem';
+        }
+        
+        function resetDefaults() {
+            phrases = [
+                "Game Developer | Scripter",
+                "Discord Bot Creator",
+                "Roblox Enthusiast",
+                "Always Learning 🚀"
+            ];
+            
+            document.getElementById('colorPicker').value = '#00D9FF';
+            document.getElementById('fontSize').value = '2.5';
+            document.getElementById('typeSpeed').value = '100';
+            document.getElementById('pauseTime').value = '2000';
+            
+            updatePhraseList();
+            applyChanges();
+        }
+        
+        // Initialize
+        updatePhraseList();
+        type();
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Wave Footer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0D1117;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .wave-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(180deg, #0D1117 0%, #1a1b27 100%);
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="%2300D9FF" fill-opacity="0.3"/></svg>') repeat-x;
+            animation: wave 15s linear infinite;
+        }
+
+        .wave:nth-child(2) {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%2300B8E6" fill-opacity="0.5"/></svg>') repeat-x;
+            animation: wave 20s linear infinite reverse;
+        }
+
+        .wave:nth-child(3) {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="%230080FF" fill-opacity="0.7"/></svg>') repeat-x;
+            animation: wave 25s linear infinite;
+        }
+
+        @keyframes wave {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .footer-text {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .footer-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.8);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(0, 217, 255, 0.8); }
+            50% { text-shadow: 0 0 30px rgba(0, 217, 255, 1); }
+        }
+
+        .controls {
+            background: #161B22;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #30363D;
+            margin: 20px;
+            max-width: 600px;
+        }
+
+        h3 {
+            color: #00D9FF;
+            margin-top: 0;
+        }
+
+        .control-group {
+            margin: 15px 0;
+        }
+
+        label {
+            color: #C9D1D9;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="color"], input[type="range"] {
+            width: 100%;
+            padding: 8px;
+            background: #0D1117;
+            border: 1px solid #30363D;
+            border-radius: 5px;
+            color: #C9D1D9;
+        }
+
+        input[type="color"] {
+            width: 60px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        button {
+            background: #00D9FF;
+            color: #0D1117;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #00B8E6;
+            transform: translateY(-2px);
+        }
+
+        .color-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .color-item {
+            flex: 1;
+            min-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <h3>⚙️ Customize Wave Animation</h3>
+        
+        <div class="control-group">
+            <label>Message Text:</label>
+            <input type="text" id="messageInput" value="Thanks for visiting!" oninput="updateMessage()">
+        </div>
+        
+        <div class="control-group">
+            <label>Wave Colors:</label>
+            <div class="color-group">
+                <div class="color-item">
+                    <label>Wave 1:</label>
+                    <input type="color" id="wave1Color" value="#00D9FF" onchange="updateWaveColors()">
+                </div>
+                <div class="color-item">
+                    <label>Wave 2:</label>
+                    <input type="color" id="wave2Color" value="#00B8E6" onchange="updateWaveColors()">
+                </div>
+                <div class="color-item">
+                    <label>Wave 3:</label>
+                    <input type="color" id="wave3Color" value="#0080FF" onchange="updateWaveColors()">
+                </div>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label>Animation Speed: <span id="speedLabel">Medium</span></label>
+            <input type="range" id="speedSlider" min="1" max="3" value="2" step="1" oninput="updateSpeed()">
+        </div>
+        
+        <div class="control-group">
+            <label>Wave Height: <span id="heightLabel">200px</span></label>
+            <input type="range" id="heightSlider" min="100" max="400" value="200" step="10" oninput="updateHeight()">
+        </div>
+        
+        <button onclick="resetDefaults()">Reset to Defaults</button>
+    </div>
+
+    <div class="wave-container" id="waveContainer">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="footer-text">
+            <h1 id="footerMessage">Thanks for visiting! ⭐</h1>
+        </div>
+    </div>
+
+    <script>
+        function updateMessage() {
+            const message = document.getElementById('messageInput').value;
+            document.getElementById('footerMessage').textContent = message;
+        }
+
+        function updateWaveColors() {
+            const color1 = document.getElementById('wave1Color').value;
+            const color2 = document.getElementById('wave2Color').value;
+            const color3 = document.getElementById('wave3Color').value;
+            
+            // Convert hex to SVG-safe format
+            const toSVGColor = (hex) => hex.replace('#', '%23');
+            
+            const wave1 = document.getElementById('wave1');
+            const wave2 = document.getElementById('wave2');
+            const wave3 = document.getElementById('wave3');
+            
+            wave1.style.backgroundImage = `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="${toSVGColor(color1)}" fill-opacity="0.3"/></svg>')`;
+            
+            wave2.style.backgroundImage = `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="${toSVGColor(color2)}" fill-opacity="0.5"/></svg>')`;
+            
+            wave3.style.backgroundImage = `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="${toSVGColor(color3)}" fill-opacity="0.7"/></svg>')`;
+        }
+
+        function updateSpeed() {
+            const speed = document.getElementById('speedSlider').value;
+            const speeds = ['Slow', 'Medium', 'Fast'];
+            const durations = [30, 20, 10]; // seconds
+            
+            document.getElementById('speedLabel').textContent = speeds[speed - 1];
+            
+            const wave1 = document.getElementById('wave1');
+            const wave2 = document.getElementById('wave2');
+            const wave3 = document.getElementById('wave3');
+            
+            const baseDuration = durations[speed - 1];
+            wave1.style.animationDuration = `${baseDuration}s`;
+            wave2.style.animationDuration = `${baseDuration + 5}s`;
+            wave3.style.animationDuration = `${baseDuration + 10}s`;
+        }
+
+        function updateHeight() {
+            const height = document.getElementById('heightSlider').value;
+            document.getElementById('heightLabel').textContent = height + 'px';
+            document.getElementById('waveContainer').style.height = height + 'px';
+        }
+
+        function resetDefaults() {
+            document.getElementById('messageInput').value = 'Thanks for visiting! ⭐';
+            document.getElementById('wave1Color').value = '#00D9FF';
+            document.getElementById('wave2Color').value = '#00B8E6';
+            document.getElementById('wave3Color').value = '#0080FF';
+            document.getElementById('speedSlider').value = '2';
+            document.getElementById('heightSlider').value = '200';
+            
+            updateMessage();
+            updateWaveColors();
+            updateSpeed();
+            updateHeight();
+        }
+    </script>
+</body>
+</html>

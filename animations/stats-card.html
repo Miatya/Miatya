@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Stats Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0D1117;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .stats-card {
+            background: linear-gradient(135deg, #1a1b27 0%, #0D1117 100%);
+            border: 1px solid #30363D;
+            border-radius: 15px;
+            padding: 25px;
+            width: 450px;
+            box-shadow: 0 8px 32px rgba(0, 217, 255, 0.1);
+            animation: cardGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes cardGlow {
+            0%, 100% { box-shadow: 0 8px 32px rgba(0, 217, 255, 0.1); }
+            50% { box-shadow: 0 8px 32px rgba(0, 217, 255, 0.3); }
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #30363D;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00D9FF, #0080FF);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .username {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #00D9FF;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding: 12px;
+            background: #161B22;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .stat-row:hover {
+            background: #1c2128;
+            transform: translateX(5px);
+        }
+
+        .stat-label {
+            color: #8B949E;
+            font-size: 0.95rem;
+        }
+
+        .stat-value {
+            color: #00D9FF;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #161B22;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00D9FF, #00B8E6);
+            border-radius: 10px;
+            transition: width 1s ease-out;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .language-name {
+            color: #C9D1D9;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        .controls {
+            background: #161B22;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #30363D;
+            width: 450px;
+        }
+
+        h3 {
+            color: #00D9FF;
+            margin-top: 0;
+        }
+
+        .control-group {
+            margin: 15px 0;
+        }
+
+        label {
+            color: #C9D1D9;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            background: #0D1117;
+            border: 1px solid #30363D;
+            border-radius: 5px;
+            color: #C9D1D9;
+        }
+
+        button {
+            background: #00D9FF;
+            color: #0D1117;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #00B8E6;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stats-card">
+            <div class="card-header">
+                <div class="profile-pic">M</div>
+                <div class="username">Miat's GitHub Stats</div>
+            </div>
+            
+            <div class="stat-row">
+                <span class="stat-label">⭐ Total Stars</span>
+                <span class="stat-value" id="stars">42</span>
+            </div>
+            
+            <div class="stat-row">
+                <span class="stat-label">🔨 Total Commits</span>
+                <span class="stat-value" id="commits">328</span>
+            </div>
+            
+            <div class="stat-row">
+                <span class="stat-label">📁 Public Repos</span>
+                <span class="stat-value" id="repos">12</span>
+            </div>
+            
+            <div class="stat-row">
+                <span class="stat-label">🤝 Contributions</span>
+                <span class="stat-value" id="contributions">567</span>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <h4 style="color: #00D9FF; margin-bottom: 10px;">📊 Most Used Languages</h4>
+                
+                <div class="language-item">
+                    <span class="language-name">
+                        <span class="language-dot" style="background: #2C2D72;"></span>
+                        Lua
+                    </span>
+                    <span class="stat-value">45%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 45%; background: linear-gradient(90deg, #2C2D72, #5E5E9E);"></div>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">
+                        <span class="language-dot" style="background: #3776AB;"></span>
+                        Python
+                    </span>
+                    <span class="stat-value">30%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30%; background: linear-gradient(90deg, #3776AB, #5A9FD4);"></div>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">
+                        <span class="language-dot" style="background: #F7DF1E;"></span>
+                        JavaScript
+                    </span>
+                    <span class="stat-value">15%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 15%; background: linear-gradient(90deg, #F7DF1E, #FFED4E);"></div>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">
+                        <span class="language-dot" style="background: #E34F26;"></span>
+                        HTML
+                    </span>
+                    <span class="stat-value">10%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 10%; background: linear-gradient(90deg, #E34F26, #F16529);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h3>⚙️ Customize Stats Card</h3>
+            
+            <div class="control-group">
+                <label>Total Stars:</label>
+                <input type="number" id="starsInput" value="42">
+            </div>
+            
+            <div class="control-group">
+                <label>Total Commits:</label>
+                <input type="number" id="commitsInput" value="328">
+            </div>
+            
+            <div class="control-group">
+                <label>Public Repos:</label>
+                <input type="number" id="reposInput" value="12">
+            </div>
+            
+            <div class="control-group">
+                <label>Total Contributions:</label>
+                <input type="number" id="contributionsInput" value="567">
+            </div>
+            
+            <button onclick="updateStats()">Update Stats</button>
+            <button onclick="animateNumbers()">Animate Numbers</button>
+        </div>
+    </div>
+
+    <script>
+        function updateStats() {
+            document.getElementById('stars').textContent = document.getElementById('starsInput').value;
+            document.getElementById('commits').textContent = document.getElementById('commitsInput').value;
+            document.getElementById('repos').textContent = document.getElementById('reposInput').value;
+            document.getElementById('contributions').textContent = document.getElementById('contributionsInput').value;
+        }
+
+        function animateNumbers() {
+            const elements = ['stars', 'commits', 'repos', 'contributions'];
+            const inputs = ['starsInput', 'commitsInput', 'reposInput', 'contributionsInput'];
+            
+            elements.forEach((id, index) => {
+                const target = parseInt(document.getElementById(inputs[index]).value);
+                const element = document.getElementById(id);
+                const duration = 2000;
+                const steps = 60;
+                const increment = target / steps;
+                let current = 0;
+                let step = 0;
+                
+                const timer = setInterval(() => {
+                    step++;
+                    current = Math.min(Math.round(increment * step), target);
+                    element.textContent = current;
+                    
+                    if (step >= steps) {
+                        clearInterval(timer);
+                        element.textContent = target;
+                    }
+                }, duration / steps);
+            });
+        }
+
+        // Auto-animate on load
+        window.addEventListener('load', () => {
+            setTimeout(animateNumbers, 500);
+        });
+    </script>
+</body>
+</html>
