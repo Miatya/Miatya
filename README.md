@@ -150,4 +150,8 @@ const Miat = {
 
 If you like my projects, consider giving them a star!
 
+---
+
+<sub>*Some content on this profile was generated and formatted with AI assistance.*</sub>
+
 </div>
