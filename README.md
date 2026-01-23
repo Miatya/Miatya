@@ -129,16 +129,6 @@ const Miat = {
 
 ---
 
-## 📈 Contribution Insights
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0E27&title_color=00D9FF&icon_color=60A5FA&text_color=93C5FD&hide_rank=true" />
-
-</div>
-
----
-
 ## 💻 Coding Activity
 
 <div align="center">
