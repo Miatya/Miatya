@@ -83,15 +83,15 @@ const Miat = {
 
 <div align="center">
   
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=1800"/>
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=1800"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=1800"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=1800"/>
 
 </div>
 
 <div align="center">
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=13)
-![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=13&include_all_commits=true)
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark&include_all_commits=true)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=miatya&theme=github-dark-blue&hide_border=false&border_radius=10&date_format=M%20j%5B%2C%20Y%5D)
 
 </div>
@@ -116,9 +116,9 @@ const Miat = {
 
 <div align="center">
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&theme=github-compact&hide_border=false&border_radius=10&area=true&custom_title=Contribution%20Graph)](https://github.com/miatya)
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph)](https://github.com/miatya)
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
