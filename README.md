@@ -85,15 +85,15 @@ const Miat = {
 
 <div align="center">
   
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=600"/>
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=600"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=0"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=0"/>
 
 </div>
 
 <div align="center">
 
 ![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=13&card_width=400&include_all_commits=true)
-![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark&card_width=400&exclude_repo=&langs_count=10)
+![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark&card_width=400&exclude_repo=&langs_count=20)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=miatya&theme=github-dark-blue&hide_border=false&border_radius=10&date_format=M%20j%5B%2C%20Y%5D)
 
 </div>
