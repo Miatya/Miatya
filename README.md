@@ -2,7 +2,7 @@
   
 # Well Hello There! I'm Miata
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Systems+Architect+%7C+Developer;Community+Relations+Manager;Technical+Leadership;Always+Learning)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Systems+Architect+%7C+Developer;Community+Manager;Technical+Leadership;Always+Learning)](https://git.io/typing-svg)
 
 [![Profile Views](https://komarev.com/ghpvc/?username=miatya&color=00d9ff&style=for-the-badge&label=Profile+Views)](https://github.com/miatya)
 
@@ -117,14 +117,9 @@ const Miat = {
 ## Coding Activity
 
 <div align="center">
-
 ![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph)](https://github.com/miatya)
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
 </div>
 
 ---
