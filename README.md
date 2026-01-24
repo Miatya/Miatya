@@ -116,7 +116,7 @@ const Miat = {
 ## Coding Activity
 
 <div align="center">
-[.](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
+![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph)](https://github.com/miatya)
 </div>
@@ -152,13 +152,3 @@ If you like my projects, consider giving them a star!
 ---
 
 <sub>*Some content on this profile was generated and formatted with AI assistance.*</sub>
-
-</div>- tweak Sun 25/01/2026 12:37:14.31
-- tweak Sun 25/01/2026 12:38:58.55
-- tweak Sun 25/01/2026 12:38:58.55
-
-## Update Sun 25/01/2026 12:38:58.55
-Minor refactor notes.
-## Update Sun 25/01/2026 12:41:25.63
-Minor refactor notes.
-- tweak Sun 25/01/2026 12:41:25.63
