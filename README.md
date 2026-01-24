@@ -1,7 +1,6 @@
 <div align="center">
   
 # Well Hello There! I'm Miata
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Systems+Architect+%7C+Developer;Community+Manager;Technical+Leadership;Always+Learning)](https://git.io/typing-svg)
 
 [![Profile Views](https://komarev.com/ghpvc/?username=miatya&color=00d9ff&style=for-the-badge&label=Profile+Views)](https://github.com/miatya)
@@ -85,8 +84,8 @@ const Miat = {
 
 <div align="center">
   
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=0"/>
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=0"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=15"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=15"/>
 
 </div>
 
@@ -153,11 +152,3 @@ If you like my projects, consider giving them a star!
 ---
 
 <sub>*Some content on this profile was generated and formatted with AI assistance.*</sub>
-
-</div>- tweak Sun 25/01/2026 12:37:14.31
-- tweak Sun 25/01/2026 12:38:58.55
-- tweak Sun 25/01/2026 12:38:58.55
-
-## Update Sun 25/01/2026 12:41:25.63
-Minor refactor notes.
-- tweak Sun 25/01/2026 12:41:25.63
