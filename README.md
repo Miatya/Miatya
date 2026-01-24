@@ -83,8 +83,8 @@ const Miat = {
 
 <div align="center">
   
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=900"/>
-<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=900"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api?username=miatya&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=300"/>
+<img height="160em" src="https://github-readme-stats-alpha-five-45.vercel.app/api/top-langs/?username=miatya&layout=compact&langs_count=8&theme=github_dark&include_all_commits=true&count_private=true&include_orgs=true&hide_border=false&border_radius=10&border_color=30363D&cache_seconds=300"/>
 
 </div>
 
