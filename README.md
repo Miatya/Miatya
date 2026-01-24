@@ -118,7 +118,7 @@ const Miat = {
 
 <div align="center">
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
+![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/profile-details?username=miatya&theme=github_dark&include_all_commits=true)
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=miatya&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph)](https://github.com/miatya)
 
