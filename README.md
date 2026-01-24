@@ -93,7 +93,7 @@ const Miat = {
 
 ![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/productive-time?username=miatya&theme=github_dark&utcOffset=13&card_width=400&include_all_commits=true)
 ![](https://github-profile-summary-cards-theta-nine.vercel.app/api/cards/repos-per-language?username=miatya&theme=github_dark&card_width=400&exclude_repo=&langs_count=20)
-![](https://github-readme-streak-stats-git-main-denvercoder1s-projects.vercel.app/?user=miatya&theme=github-dark-blue&hide_border=false&border_radius=10&date_format=M%20j%5B%2C%20Y%5D)
+![](https://github-readme-streak-stats-blush-six-90.vercel.app/?user=miatya&theme=github-dark-blue&hide_border=false&border_radius=10&date_format=M%20j%5B%2C%20Y%5D)
 
 </div>
 
